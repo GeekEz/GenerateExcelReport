@@ -697,7 +697,7 @@ namespace GenerateExcelLib.Tests
             using MemoryStream ms = new(new byte[5000000]);
             //save excel file content into tempfile(memory stream)
             Result_Book.Save(ms, SaveFormat.Xlsx);
-            Result_Book.Save(@"c:\test3.xlsx"); // only for debug
+            Result_Book.Save(@"c:\test6.xlsx"); // only for debug
                                                // first col (one based),first row (one based), total cols(one based), total rows(one based)
                                                //Then: Assert result
             Assert.Equal(19, designer.MergeCells.Count);
